@@ -23,8 +23,8 @@ public class main {
         ArrayList nd = new ArrayList(noDupe); //converts noDupe to ArrayList
         nd.add(nd.size() + 1); //added to list to create equal size - a number not in the bag
         System.out.println("\nTile bag without dupe tile: \n" + noDupe); //displays bag without 11
-
-        //compares the two ArrayLists to find the duplicate - if last index is the duplicate it won't match 11
+        
+        //compares the two ArrayLists to find the duplicate - if last index is the duplicate it won't match the .size() + 1
         for (int i = 0; i <= tilesInBag.size(); i++) {
             if (tilesInBag.get(i) == nd.get(i)) {
 
