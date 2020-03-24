@@ -17,7 +17,7 @@ public class Main {
         
         if (tib < 2) {
             tib =2;
-            System.out.println("The minimal amount of tiles is two.  Your bag now has two tiles");
+            System.out.println("The minimal amount of tiles is three.  Your bag now has three tiles (1 duplicate and 2 other numbers)");
         }
         
         sc.close(); //close the scanner
