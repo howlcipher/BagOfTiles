@@ -1,0 +1,1 @@
+The program creates a bag of tiles and then sorts them.  The number of tiles is determined by user input.  Type and int into the prompt to see the results.
