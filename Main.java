@@ -3,16 +3,23 @@ import java.util.LinkedHashSet;
 import java.util.Scanner;
 import java.util.Set;
 
-public class main {
+public class Main {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in); //create the scanner
         System.out.print("Enter the number of tiles in the bag: ");
         while (!sc.hasNextInt()) { //if the user does not enter an int
-            System.out.println("Try again (enter a whole number such as 1, 2, 3...)");
+            System.out.println("Try again (enter a whole number such as 2 or greater)");
             sc.next();
         }
+
         int tib = (int) sc.nextInt(); //input the number of tiles
+        
+        if (tib < 2) {
+            tib =2;
+            System.out.println("The minimal amount of tiles is two.  Your bag now has two tiles");
+        }
+        
         sc.close(); //close the scanner
         tileBag tb = new tileBag(tib);//create a bag object with set amount of tiles
         ArrayList tilesInBag = tb.contents(tb.getTilesInBag()); //load random tiles into a variable
@@ -23,7 +30,7 @@ public class main {
         ArrayList nd = new ArrayList(noDupe); //converts noDupe to ArrayList
         nd.add(nd.size() + 1); //added to list to create equal size - a number not in the bag
         System.out.println("\nTile bag without dupe tile: \n" + noDupe); //displays bag without 11
-        
+
         //compares the two ArrayLists to find the duplicate - if last index is the duplicate it won't match the .size() + 1
         for (int i = 0; i <= tilesInBag.size(); i++) {
             if (tilesInBag.get(i) == nd.get(i)) {
