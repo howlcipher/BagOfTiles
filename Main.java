@@ -9,7 +9,7 @@ public class main {
         Scanner sc = new Scanner(System.in); //create the scanner
         System.out.print("Enter the number of tiles in the bag: ");
         while (!sc.hasNextInt()) { //if the user does not enter an int
-            System.out.println("Try again (enter a whole number such 1, 2, 3...)");
+            System.out.println("Try again (enter a whole number such as 1, 2, 3...)");
             sc.next();
         }
         int tib = (int) sc.nextInt(); //input the number of tiles
