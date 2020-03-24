@@ -16,7 +16,7 @@ public class tileBag {
         ArrayList randList = new ArrayList(tib);
         int i = 0;
         while (i < tib) {
-            int newNumber = rand.nextInt((tib + 1) - 1) + 1; //generates random number 1 - 10
+            int newNumber = rand.nextInt((tib + 1) - 1) + 1; //generates random number 1 - tib
             if (randList.contains(newNumber)) {  //if in ArrayList do nothing
 
             } else { //if not in the list
