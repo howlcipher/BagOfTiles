@@ -18,7 +18,7 @@ public class main {
         ArrayList tilesInBag = tb.contents(tb.getTilesInBag()); //load random tiles into a variable
         System.out.println("Your bag of tiles contains: \n" + tilesInBag); //displays the current tiles
 
-
+        //SORT CODE BELOW - FIND THE DUPLICATE
         Set<Integer> noDupe = new LinkedHashSet<Integer>(tilesInBag); //adds all items from tilesInBag except for duplicates
         ArrayList nd = new ArrayList(noDupe); //converts noDupe to ArrayList
         nd.add(nd.size() + 1); //added to list to create equal size - a number not in the bag
