@@ -16,7 +16,7 @@ public class Main {
         int tib = (int) sc.nextInt(); //input the number of tiles
 
         if (tib < 2) {
-            tib =1;
+            tib =2;
             System.out.println("The minimal amount of tiles is two.  Your bag now has three tiles (1 duplicate and 2 other numbers)");
         }
         System.out.println("A duplicate tile has been placed in the bag increasing your bag to: " + (tib + 1));
